@@ -1,0 +1,16 @@
+int contador = 0;
+int acumulador = 0;
+List <int> numeros= new List<int> ();
+
+numeros.Add (30);
+numeros.Add (30);
+numeros.Add (30);
+numeros.Add (40);
+numeros.Add (40);
+numeros.Add (10);
+
+numeros.ForEach (x => { Console.WriteLine (x); });
+
+numeros.ForEach (x => { acumulador += x;contador++; } );
+
+Console.WriteLine("Promedio es= " + acumulador / contador); 
